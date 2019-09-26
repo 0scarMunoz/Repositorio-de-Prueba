@@ -1,0 +1,16 @@
+// VHDL test code
+
+process(CLK,reset)
+begin
+if(reset='1') then
+Q<='0';
+elsif(clk'event and clk='1') then
+  if(clear='1')then
+    Q<='0';
+  else
+    Q<=D;
+  end if;
+Q<=D;
+end if;
+end process;
+
