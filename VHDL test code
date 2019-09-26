@@ -1,4 +1,4 @@
-// VHDL test code
+## VHDL test code
 
 process(CLK,reset)
 begin
